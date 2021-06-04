@@ -1,0 +1,117 @@
+:root {
+    --black: #0C0B0B;
+    --gray: #0F0E0E;
+    --light-gray: #1b1b1b;
+    --white: #B7B7B7;
+    --green: #046313;
+    --blue: #044A7D;
+    --yellow: #725200;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    background: var(--black);
+    color: var(--white);
+}
+
+a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+main {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.box {
+    background: var(--gray);
+    min-width: 50%;
+    padding: 4rem;
+}
+
+.person {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.person .profile {
+    display: flex;
+    align-items: center;
+}
+
+.person .profile img {
+    width: 90px;
+    border-radius: 50px;
+    margin-right: 1rem;
+}
+
+.person .profile h3 {
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.person .edit-profile {
+    background: var(--light-gray);
+    padding: 0.7rem 1rem;
+    border-radius: 0.4rem;
+    display: flex;
+    align-items: center;
+}
+
+.person .profile a {
+    padding: 0.5rem 0;
+    font-weight: 100;
+}
+
+.person .edit-profile i {
+    font-size: 1.2rem;
+    padding-right: 0.3rem;
+}
+
+.statistics {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 3rem;
+}
+
+.projects {
+    background: var(--green);
+}
+
+.stars {
+    background: var(--blue);
+}
+
+.follows {
+    background: var(--yellow);
+}
+
+.card {
+    width: calc(90% / 3);
+
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+}
+
+.card p {
+    font-weight: 100;
+    position: relative;
+    top: -0.5rem;
+}
+
+.card h3 {
+    font-size: 2rem;
+    font-weight: bold;
+}
