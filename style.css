@@ -48,6 +48,7 @@ main {
 .person .profile {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .person .profile img {
@@ -84,6 +85,7 @@ main {
     align-items: center;
     justify-content: space-evenly;
     margin-top: 3rem;
+    flex-wrap: wrap;
 }
 
 .projects {
@@ -114,4 +116,33 @@ main {
 .card h3 {
     font-size: 2rem;
     font-weight: bold;
+}
+
+@media(max-width: 1024px) {
+    .box {
+        padding: 1.5rem;
+        width: 100%;
+    }
+
+    .person, .profile {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile {
+        padding-bottom: 0.8rem;
+    }
+
+    .person .profile img {
+        margin: 0;
+    }
+
+    .statistics {
+        margin-top: 1.5rem;
+    }
+
+    .card {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
 }
